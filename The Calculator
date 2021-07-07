@@ -17,6 +17,18 @@ submenu.add_separator()
 submenu.add_command(label="Exit",command= root.quit) 
 root.title('Calculator')
 
+def factorial():
+    
+    hello = display.get()
+    num = int(hello)
+    facto = 1
+    counter = num 
+    while counter > 0 :
+        facto = facto*counter
+        counter -= 1
+        clear()
+        display.insert(0, facto)
+    
 
 
 
@@ -92,7 +104,7 @@ Button(root,text="  (  ",command= lambda :operation("(")).grid(row=4,column=4)
 Button(root,text="exp",command= lambda :operation("**")).grid(row=5,column=4)
  
 Button(root,text=" <- ",command= lambda :undo()).grid(row=2,column=5)
-Button(root,text="  x!  ").grid(row=3,column=5)
+Button(root,text="  x!  ",command= lambda :factorial()).grid(row=3,column=5)
 Button(root,text="  )   ",command= lambda :operation(")")).grid(row=4,column=5)
 Button(root,text=" ^2 ",command= lambda :operation("**2")).grid(row=5,column=5)
  
