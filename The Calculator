@@ -98,7 +98,7 @@ Button(root,text=" * ",command= lambda :operation("*")).grid(row=4,column=3)
 Button(root,text=" / ",command= lambda :operation("/")).grid(row=5,column=3)
  
 # adding other buttons
-Button(root,text=" pi ",command= lambda :operation("*3.14")).grid(row=2,column=4)
+Button(root,text=" pi ",command= lambda :operation("3.14")).grid(row=2,column=4)
 Button(root,text=" % ",command= lambda :operation("%")).grid(row=3,column=4)
 Button(root,text="  (  ",command= lambda :operation("(")).grid(row=4,column=4)
 Button(root,text="exp",command= lambda :operation("**")).grid(row=5,column=4)
